@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /*If is the first time that the app is running on the device, shows the initial configuration view controller, in other case shows the calendar with the user's previous configuration*/
         let defaults = UserDefaults.standard
         if defaults.object(forKey: "isFirstTime") == nil{
-            defaults.set("No", forKey: "isFirstTime")
+            //defaults.set("No", forKey: "isFirstTime")
             defaults.synchronize()
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let viewController = storyboard.instantiateViewController(withIdentifier: "SemesterConfigurationViewController") as! SemesterConfigurationViewController

@@ -26,7 +26,6 @@ class SemesterConfigurationViewController: UIViewController {
     }
 
     @IBAction func nextButton(_ sender: Any) {
-        print("nextButton")
         if semesterTitleTextField.text != ""{
             semester.title = semesterTitleTextField.text!
             semester.beginDate = beginDate
@@ -36,6 +35,12 @@ class SemesterConfigurationViewController: UIViewController {
                 realm.add(semester)
             }
             performSegue(withIdentifier: "configurationSegue", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "configurationSegue"{
+            let subjectsConfigurationViewController = segue.destination as! SubjectsConfigurationViewController
         }
     }
 }

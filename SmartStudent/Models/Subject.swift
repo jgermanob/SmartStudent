@@ -9,10 +9,18 @@
 import Foundation
 import RealmSwift
 
+class Weekday : Object{
+    @objc dynamic var day : Int = Int()
+}
+
 class Subject : Object{
     @objc dynamic var name : String = String()
     @objc dynamic var classroom : String = String()
     @objc dynamic var teacher : String = String()
     @objc dynamic var startTime : Date = Date()
     @objc dynamic var endTime : Date = Date()
+    let weekdays = List<Weekday>()
 }
+
+
+
