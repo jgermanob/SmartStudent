@@ -34,6 +34,14 @@ class SubjectsConfigurationViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func goToCalendar(_ sender: Any) {
+        if let calendarViewController = self.storyboard?.instantiateViewController(withIdentifier: "calendarViewController") as? CalendarViewController{
+            let navigationController = UINavigationController(rootViewController: calendarViewController)
+            self.present(navigationController, animated: true, completion: nil)
+        }
+    }
+    
     func getSubjects(){
         subjects = []
         let s = realm.objects(Subject.self)

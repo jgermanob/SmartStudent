@@ -161,6 +161,9 @@
                                 <rect key="frame" x="158" y="789" width="99" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Siguiente"/>
+                                <connections>
+                                    <action selector="goToCalendar:" destination="xjQ-RY-0Up" eventType="touchUpInside" id="cTb-rP-YD7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -322,12 +325,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKX-s5-xGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692.753623188406" y="764.73214285714278"/>
+            <point key="canvasLocation" x="1664" y="765"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="3uH-fq-rkx">
             <objects>
-                <viewController id="fjw-ol-NT8" customClass="CalendarViewController" customModule="SmartStudent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="calendarViewController" id="fjw-ol-NT8" customClass="CalendarViewController" customModule="SmartStudent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VZZ-jB-YBS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -444,7 +447,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdl-nT-Gqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-294.20289855072468" y="1867.6339285714284"/>
+            <point key="canvasLocation" x="1664" y="1594"/>
         </scene>
     </scenes>
 </document>
