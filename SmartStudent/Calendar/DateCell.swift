@@ -11,6 +11,7 @@ import JTAppleCalendar
 
 class DateCell : JTAppleCell{
     @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var selectedView: UIView!
 }
 
 

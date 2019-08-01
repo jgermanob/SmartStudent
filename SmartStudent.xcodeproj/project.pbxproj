@@ -21,6 +21,7 @@
 		D291FCF122E6546700E487EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D291FCF022E6546700E487EA /* Assets.xcassets */; };
 		D291FCF422E6546700E487EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D291FCF222E6546700E487EA /* LaunchScreen.storyboard */; };
 		D2F9914A22EA436000A996A8 /* SubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F9914922EA436000A996A8 /* SubjectTableViewCell.swift */; };
+		D2FB170922F27BFC00EC1713 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FB170822F27BFC00EC1713 /* ScheduleTableViewCell.swift */; };
 		EB40C70E6BAC4EAE0647D66D /* Pods_SmartStudent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FACB0BFBAA4A24DE723F1A /* Pods_SmartStudent.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		D291FCF322E6546700E487EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D291FCF522E6546700E487EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F9914922EA436000A996A8 /* SubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewCell.swift; sourceTree = "<group>"; };
+		D2FB170822F27BFC00EC1713 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				D20A028022E7B87F002CD010 /* DateHeader.swift */,
 				D20A028222E7B8EE002CD010 /* DateCell.swift */,
 				D20A027922E788A2002CD010 /* CalendarViewController.swift */,
+				D2FB170822F27BFC00EC1713 /* ScheduleTableViewCell.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				D20A027A22E788A2002CD010 /* CalendarViewController.swift in Sources */,
 				D20A027422E77575002CD010 /* SubjectsConfigurationViewController.swift in Sources */,
+				D2FB170922F27BFC00EC1713 /* ScheduleTableViewCell.swift in Sources */,
 				D20A028122E7B87F002CD010 /* DateHeader.swift in Sources */,
 				D20A027E22E78E4A002CD010 /* Subject.swift in Sources */,
 				D20A028322E7B8EE002CD010 /* DateCell.swift in Sources */,
