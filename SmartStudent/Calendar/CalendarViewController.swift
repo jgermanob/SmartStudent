@@ -14,6 +14,8 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var scheduleTableView: UITableView!
     let realm = try! Realm()
+    var showingMenu = false
+    @IBOutlet weak var sideMenuLeadingConstraint: NSLayoutConstraint!
     
     //Array to store subject for an specific day
     var todaySubjects = [Subject]()
@@ -36,6 +38,18 @@ class CalendarViewController: UIViewController {
     func configureScheduleTableView(){
         scheduleTableView.delegate = self
         scheduleTableView.dataSource = self
+    }
+    
+    @IBAction func onTapOptions(_ sender: UIBarButtonItem) {
+        showingMenu = !showingMenu
+        if showingMenu {
+            UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+            sideMenuLeadingConstraint.constant = 0
+        }else{
+            sideMenuLeadingConstraint.constant = -240
+        }
     }
     
 }

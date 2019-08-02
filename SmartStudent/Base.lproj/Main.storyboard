@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fjw-ol-NT8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O2L-5C-yEZ">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -336,7 +336,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gWt-tS-YN4" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
-                                <rect key="frame" x="0.0" y="114" width="414" height="535"/>
+                                <rect key="frame" x="0.0" y="158" width="414" height="491"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ghu-7r-02j">
                                     <size key="itemSize" width="50" height="50"/>
@@ -521,6 +521,13 @@
                                     </view>
                                 </subviews>
                             </scrollView>
+                            <view contentMode="scaleToFill" restorationIdentifier="sideMenu" translatesAutoresizingMaskIntoConstraints="NO" id="YWE-jk-8lc">
+                                <rect key="frame" x="-240" y="88" width="240" height="808"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Eu3-8I-Hg2"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -531,18 +538,47 @@
                             <constraint firstItem="7Pe-fF-pTM" firstAttribute="trailing" secondItem="f1I-2A-GRK" secondAttribute="trailing" id="Fxu-C1-bq0"/>
                             <constraint firstItem="gWt-tS-YN4" firstAttribute="leading" secondItem="f1I-2A-GRK" secondAttribute="leading" id="ZPb-nu-SNi"/>
                             <constraint firstAttribute="bottom" secondItem="7Pe-fF-pTM" secondAttribute="bottom" id="ZVO-eP-LkF"/>
+                            <constraint firstItem="YWE-jk-8lc" firstAttribute="leading" secondItem="f1I-2A-GRK" secondAttribute="leading" constant="-240" id="aZo-we-NZX"/>
                             <constraint firstItem="7Pe-fF-pTM" firstAttribute="top" secondItem="gWt-tS-YN4" secondAttribute="bottom" constant="8" id="dxW-w9-RM1"/>
+                            <constraint firstItem="YWE-jk-8lc" firstAttribute="top" secondItem="f1I-2A-GRK" secondAttribute="top" id="eOO-BO-Wbn"/>
+                            <constraint firstAttribute="bottom" secondItem="YWE-jk-8lc" secondAttribute="bottom" id="lpa-2C-oEg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="f1I-2A-GRK"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9cH-uX-gOY">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="cGr-5V-Qz9">
+                            <connections>
+                                <action selector="onTapOptions:" destination="fjw-ol-NT8" id="a73-0X-5py"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="calendarView" destination="gWt-tS-YN4" id="tlS-N7-xID"/>
                         <outlet property="scheduleTableView" destination="qB4-po-ylT" id="oci-Qr-TxY"/>
+                        <outlet property="sideMenuLeadingConstraint" destination="aZo-we-NZX" id="Xgt-oW-bWX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdl-nT-Gqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1663.7681159420292" y="1593.75"/>
+            <point key="canvasLocation" x="2573.913043478261" y="1541.5178571428571"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HMT-RY-NaU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O2L-5C-yEZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Fj-Xi-A1s">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fjw-ol-NT8" kind="relationship" relationship="rootViewController" id="GBl-dr-j3F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTj-tr-ZRo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="1542"/>
         </scene>
     </scenes>
 </document>
