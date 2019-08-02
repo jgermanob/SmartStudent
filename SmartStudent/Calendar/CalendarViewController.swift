@@ -43,10 +43,10 @@ class CalendarViewController: UIViewController {
     @IBAction func onTapOptions(_ sender: UIBarButtonItem) {
         showingMenu = !showingMenu
         if showingMenu {
+            sideMenuLeadingConstraint.constant = 0
             UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                 self.view.layoutIfNeeded()
-            }, completion: nil)
-            sideMenuLeadingConstraint.constant = 0
+            })
         }else{
             sideMenuLeadingConstraint.constant = -240
         }
