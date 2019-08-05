@@ -15,6 +15,8 @@
 		D20A028322E7B8EE002CD010 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20A028222E7B8EE002CD010 /* DateCell.swift */; };
 		D220C9D622E68FCB0001A7D8 /* Semester.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220C9D522E68FCB0001A7D8 /* Semester.swift */; };
 		D27E2F3E22E9396C0099C114 /* WeekdayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27E2F3D22E9396C0099C114 /* WeekdayCollectionViewCell.swift */; };
+		D287050A22F75BAD008D13F3 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D287050922F75BAD008D13F3 /* Reminder.swift */; };
+		D287050D22F771C6008D13F3 /* DirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D287050C22F771C6008D13F3 /* DirectoryManager.swift */; };
 		D291FCEA22E6546600E487EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D291FCE922E6546600E487EA /* AppDelegate.swift */; };
 		D291FCEC22E6546600E487EA /* SemesterConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D291FCEB22E6546600E487EA /* SemesterConfigurationViewController.swift */; };
 		D291FCEF22E6546600E487EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D291FCED22E6546600E487EA /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 		D20A028222E7B8EE002CD010 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		D220C9D522E68FCB0001A7D8 /* Semester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Semester.swift; sourceTree = "<group>"; };
 		D27E2F3D22E9396C0099C114 /* WeekdayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayCollectionViewCell.swift; sourceTree = "<group>"; };
+		D287050922F75BAD008D13F3 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		D287050C22F771C6008D13F3 /* DirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryManager.swift; sourceTree = "<group>"; };
 		D291FCE622E6546600E487EA /* SmartStudent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartStudent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D291FCE922E6546600E487EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D291FCEB22E6546600E487EA /* SemesterConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterConfigurationViewController.swift; sourceTree = "<group>"; };
@@ -105,8 +109,17 @@
 			children = (
 				D220C9D522E68FCB0001A7D8 /* Semester.swift */,
 				D20A027D22E78E4A002CD010 /* Subject.swift */,
+				D287050922F75BAD008D13F3 /* Reminder.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D287050B22F7718F008D13F3 /* Class notes */ = {
+			isa = PBXGroup;
+			children = (
+				D287050C22F771C6008D13F3 /* DirectoryManager.swift */,
+			);
+			path = "Class notes";
 			sourceTree = "<group>";
 		};
 		D291FCDD22E6546600E487EA = {
@@ -130,6 +143,7 @@
 		D291FCE822E6546600E487EA /* SmartStudent */ = {
 			isa = PBXGroup;
 			children = (
+				D287050B22F7718F008D13F3 /* Class notes */,
 				D20A027F22E7B85B002CD010 /* Calendar */,
 				D20A027222E77541002CD010 /* Initial Configuration */,
 				D220C9D422E68F850001A7D8 /* Models */,
@@ -262,10 +276,12 @@
 				D2FB170922F27BFC00EC1713 /* ScheduleTableViewCell.swift in Sources */,
 				D20A028122E7B87F002CD010 /* DateHeader.swift in Sources */,
 				D20A027E22E78E4A002CD010 /* Subject.swift in Sources */,
+				D287050D22F771C6008D13F3 /* DirectoryManager.swift in Sources */,
 				D20A028322E7B8EE002CD010 /* DateCell.swift in Sources */,
 				D291FCEC22E6546600E487EA /* SemesterConfigurationViewController.swift in Sources */,
 				D2F9914A22EA436000A996A8 /* SubjectTableViewCell.swift in Sources */,
 				D220C9D622E68FCB0001A7D8 /* Semester.swift in Sources */,
+				D287050A22F75BAD008D13F3 /* Reminder.swift in Sources */,
 				D27E2F3E22E9396C0099C114 /* WeekdayCollectionViewCell.swift in Sources */,
 				D20A027622E77F8A002CD010 /* AddSubjectViewController.swift in Sources */,
 				D291FCEA22E6546600E487EA /* AppDelegate.swift in Sources */,
