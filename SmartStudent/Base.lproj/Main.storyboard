@@ -19,76 +19,89 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Pn-gx-h6n">
-                                <rect key="frame" x="-1" y="283" width="414" height="180"/>
+                                <rect key="frame" x="20" y="203" width="374" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="585521538.11106098">
                                     <!--2019-07-22 20:52:18 +0000-->
                                 </date>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Configuración del semestre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuH-rY-5wE">
-                                <rect key="frame" x="20" y="76" width="374" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Configuración del semestre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuH-rY-5wE">
+                                <rect key="frame" x="20" y="66" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inicio del semestre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GvB-Cl-h25">
-                                <rect key="frame" x="19" y="254" width="144" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inicio del semestre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GvB-Cl-h25">
+                                <rect key="frame" x="20" y="174" width="144" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ej. Primer Semestre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9l1-CM-emO">
-                                <rect key="frame" x="19" y="191" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ej. Primer Semestre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9l1-CM-emO">
+                                <rect key="frame" x="20" y="124" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fin del semestre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elf-M3-MeR">
-                                <rect key="frame" x="19" y="513" width="126" height="21"/>
+                                <rect key="frame" x="20" y="438" width="126" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Khp-HW-yzs">
-                                <rect key="frame" x="0.0" y="542" width="414" height="180"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <date key="date" timeIntervalSinceReferenceDate="585534544.47645795">
-                                    <!--2019-07-23 00:29:04 +0000-->
-                                </date>
-                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehS-37-Wko">
-                                <rect key="frame" x="161" y="758" width="90" height="50"/>
+                                <rect key="frame" x="175" y="691" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Siguiente"/>
                                 <connections>
                                     <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRd-Ay-bjJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6g-Wh-VIN">
-                                <rect key="frame" x="19" y="162" width="43" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6g-Wh-VIN">
+                                <rect key="frame" x="20" y="95" width="43" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Khp-HW-yzs">
+                                <rect key="frame" x="20" y="467" width="374" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="585534544.47645795">
+                                    <!--2019-07-23 00:29:04 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OuH-rY-5wE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="5jF-WK-Xe5"/>
+                            <constraint firstItem="GvB-Cl-h25" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5qZ-gX-0uy"/>
+                            <constraint firstItem="W6g-Wh-VIN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BUs-Qw-bhU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OuH-rY-5wE" secondAttribute="trailing" constant="20" id="EGf-l8-iLv"/>
+                            <constraint firstItem="W6g-Wh-VIN" firstAttribute="top" secondItem="OuH-rY-5wE" secondAttribute="bottom" constant="8" id="KpK-n2-bD5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9l1-CM-emO" secondAttribute="trailing" constant="20" id="NRD-RZ-Aa3"/>
+                            <constraint firstItem="OuH-rY-5wE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Tw4-zA-j7s"/>
+                            <constraint firstItem="9l1-CM-emO" firstAttribute="top" secondItem="OuH-rY-5wE" secondAttribute="bottom" constant="37" id="bkP-u8-9LQ"/>
+                            <constraint firstItem="9l1-CM-emO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gvH-tt-kfm"/>
+                            <constraint firstItem="9l1-CM-emO" firstAttribute="top" secondItem="W6g-Wh-VIN" secondAttribute="bottom" constant="8" id="maC-eg-RO4"/>
+                            <constraint firstItem="GvB-Cl-h25" firstAttribute="top" secondItem="9l1-CM-emO" secondAttribute="bottom" constant="20" id="nVa-4I-6a7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="beginDateLabel" destination="GvB-Cl-h25" id="xBO-eF-c8C"/>
                         <outlet property="beginDatePicker" destination="3Pn-gx-h6n" id="ema-Ta-roZ"/>
+                        <outlet property="button" destination="ehS-37-Wko" id="T9z-oF-rry"/>
+                        <outlet property="endDateLabel" destination="elf-M3-MeR" id="opf-Vp-Utf"/>
                         <outlet property="endDatePicker" destination="Khp-HW-yzs" id="EaR-xI-UwY"/>
+                        <outlet property="semesterTitleLabel" destination="W6g-Wh-VIN" id="l6T-oT-pIx"/>
                         <outlet property="semesterTitleTextField" destination="9l1-CM-emO" id="H3j-yV-4ja"/>
                         <segue destination="xjQ-RY-0Up" kind="showDetail" identifier="configurationSegue" id="iAO-hJ-NEj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-294" y="765"/>
+            <point key="canvasLocation" x="-294.20289855072468" y="764.73214285714278"/>
         </scene>
         <!--Subjects Configuration View Controller-->
         <scene sceneID="Bgc-8i-3i0">

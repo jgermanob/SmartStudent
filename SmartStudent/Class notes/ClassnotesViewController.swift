@@ -83,9 +83,10 @@ extension ClassnotesViewController : UIImagePickerControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.editedImage] as? UIImage else {return}
         //Save classnote photo
-        let today = Date()
+        /*let today = Date()
         let currentSubject = getCurrentSubject(today: today)
         if currentSubject == nil{
+            print("Materias en este horario: \(currentSubject)")
             let alertController = UIAlertController(title: nil, message: "No tienes ninguna clase en este horario", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alertController, animated: true, completion: nil)
@@ -98,8 +99,29 @@ extension ClassnotesViewController : UIImagePickerControllerDelegate{
             try! realm.write {
                 realm.add(classnote)
             }
+        } */
+        picker.dismiss(animated: true) {
+            let today = Date()
+            let currentSubject = self.getCurrentSubject(today: today)
+            if currentSubject == nil{
+                print("Materias en este horario: \(currentSubject)")
+                let alertController = UIAlertController(title: nil, message: "No tienes ninguna clase en este horario", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alertController, animated: true, completion: nil)
+            }else{
+                print("Materias en este horario: \(currentSubject)")
+                let classnote = Classnote()
+                classnote.subject = currentSubject!
+                classnote.time = today
+                guard let imageData = image.encodedBase64() else {return}
+                classnote.imageData = imageData
+                try! self.realm.write {
+                    self.realm.add(classnote)
+                }
+                let alertController = UIAlertController(title: nil, message: "Apunte guardado en \(classnote.subject.name)", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            }
         }
-        picker.dismiss(animated: true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
