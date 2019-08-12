@@ -17,6 +17,7 @@ class CalendarViewController: UIViewController {
     var showingMenu = false
     @IBOutlet weak var sideMenuLeadingConstraint: NSLayoutConstraint!
     
+    var selectedSubject = String()
     //Array to store subject for an specific day
     var todaySubjects = [Subject]()
     
@@ -49,6 +50,13 @@ class CalendarViewController: UIViewController {
             })
         }else{
             sideMenuLeadingConstraint.constant = -240
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "reminderSegue"{
+            let remindersDetail = segue.destination as! ReminderDetailViewController
+            remindersDetail.selectedSubject = self.selectedSubject
         }
     }
     
@@ -153,6 +161,11 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(100)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedSubject = todaySubjects[indexPath.row].name
+        performSegue(withIdentifier: "reminderSegue", sender: self)
     }
 }
 
