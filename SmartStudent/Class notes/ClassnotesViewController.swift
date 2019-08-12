@@ -78,6 +78,7 @@ extension ClassnotesViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "classnotesCell", for: indexPath) as! ClassnotesCollectionViewCell
+        cell.backgroundColor = .clear
         cell.subjectName.text = subjectsNames[indexPath.row]
         cell.subjectName.textColor = .white
         return cell

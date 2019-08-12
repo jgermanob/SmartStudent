@@ -90,6 +90,7 @@ extension ReminderDetailViewController : UITableViewDelegate, UITableViewDataSou
         var cell : UITableViewCell?
         if tableView == homeworkTableView{
             let homeworkCell = tableView.dequeueReusableCell(withIdentifier: "homeworkCell", for: indexPath) as! HomeworkTableViewCell
+            homeworkCell.backgroundColor = UIColor.clear
             homeworkCell.activityTextView.text = selectedHomeworks[indexPath.row].activity
             let date = formatter.string(from: selectedHomeworks[indexPath.row].deadline)
             homeworkCell.deadlineLabel.text = date
@@ -100,6 +101,7 @@ extension ReminderDetailViewController : UITableViewDelegate, UITableViewDataSou
         }
         if tableView == examTableView{
             let examCell = tableView.dequeueReusableCell(withIdentifier: "examCell", for: indexPath) as! ExamTableViewCell
+            examCell.backgroundColor = UIColor.clear
             examCell.topicsTextView.text = selectedExam[indexPath.row].topics
             let date = formatter.string(from: selectedExam[indexPath.row].date)
             examCell.dateLabel.text = date
@@ -109,6 +111,7 @@ extension ReminderDetailViewController : UITableViewDelegate, UITableViewDataSou
         }
         if tableView == projectTableView{
             let projectCell = tableView.dequeueReusableCell(withIdentifier: "projectCell", for: indexPath) as! ProjectTableViewCell
+            projectCell.backgroundColor = UIColor.clear
             projectCell.titleTextView.text = selectedProject[indexPath.row].title
             let date = formatter.string(from: selectedProject[indexPath.row].deadline)
             projectCell.deadlineLabel.text = date

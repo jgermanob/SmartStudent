@@ -153,10 +153,17 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleCell", for: indexPath) as! ScheduleTableViewCell
+        cell.backgroundColor = .clear
         cell.subjectNameLabel.text = todaySubjects[indexPath.row].name
         cell.subjectTeacherLabel.text = todaySubjects[indexPath.row].teacher
         cell.subjectTimeLabel.text = ""
         cell.subjectClassroomLabel.text = todaySubjects[indexPath.row].classroom
+        
+        cell.subjectNameLabel.textColor = .white
+        cell.subjectTeacherLabel.textColor = .white
+        cell.subjectTimeLabel.textColor = .white
+        cell.subjectClassroomLabel.textColor = .white
+        
         return cell
     }
     

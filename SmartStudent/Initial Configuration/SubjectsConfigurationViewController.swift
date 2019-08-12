@@ -66,10 +66,11 @@ extension SubjectsConfigurationViewController : UITableViewDelegate, UITableView
         cell.subjectTimeLabel.text = "\(formatter.string(from: subjects[indexPath.row].startTime)) - \(formatter.string(from:  subjects[indexPath.row].endTime))"
         cell.subjectTeacherLabel.text = subjects[indexPath.row].teacher
         cell.subjectClassroomLabel.text = subjects[indexPath.row].classroom
-        
-        cell.subjectNameLabel.textColor = .white
-        cell.subjectTimeLabel.textColor = .white
-        cell.subjectTeacherLabel.textColor = .white
+        cell.backgroundColor = UIColor.clear
+        cell.subjectNameLabel.textColor = UIColor.white
+        cell.subjectTimeLabel.textColor = UIColor.white
+        cell.subjectTeacherLabel.textColor = UIColor.white
+        cell.subjectClassroomLabel.textColor = UIColor.white
         return cell
     }
     
