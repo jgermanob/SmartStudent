@@ -5,3 +5,5 @@ Final project from iOS app development diploma at iOS development lab UNAM. This
 - Add classes and its info.
 - add homeworks, exams and projects as reminders to calendar.
 - Organize automatically class notes photos depending on the class where was taken.
+
+Available documentation [here](https://drive.google.com/drive/folders/1gDFVF6rTewjtmZkoRrYjPL1foqt1vFHS?usp=sharing)
