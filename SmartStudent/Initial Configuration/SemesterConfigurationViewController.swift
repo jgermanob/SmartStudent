@@ -28,8 +28,8 @@ class SemesterConfigurationViewController: UIViewController {
     @IBAction func nextButton(_ sender: Any) {
         if semesterTitleTextField.text != ""{
             semester.title = semesterTitleTextField.text!
-            semester.beginDate = beginDate
-            semester.endDate = endDate
+            semester.beginDate = beginDatePicker.date
+            semester.endDate = endDatePicker.date
             //Writting semester object on the database
             try! realm.write{
                 realm.add(semester)

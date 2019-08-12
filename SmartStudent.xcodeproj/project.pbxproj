@@ -25,6 +25,8 @@
 		D287050D22F771C6008D13F3 /* DirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D287050C22F771C6008D13F3 /* DirectoryManager.swift */; };
 		D28C47882300FFA900C0ECCC /* ClassnotesGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28C47872300FFA900C0ECCC /* ClassnotesGalleryViewController.swift */; };
 		D28C478A230119D600C0ECCC /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28C4789230119D600C0ECCC /* GalleryCollectionViewCell.swift */; };
+		D28C478C23013A2800C0ECCC /* smartStudentLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D28C478B23013A2800C0ECCC /* smartStudentLogo.png */; };
+		D28C478E23013B1B00C0ECCC /* smartStudentIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D28C478D23013B1B00C0ECCC /* smartStudentIcon.png */; };
 		D291FCEA22E6546600E487EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D291FCE922E6546600E487EA /* AppDelegate.swift */; };
 		D291FCEC22E6546600E487EA /* SemesterConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D291FCEB22E6546600E487EA /* SemesterConfigurationViewController.swift */; };
 		D291FCEF22E6546600E487EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D291FCED22E6546600E487EA /* Main.storyboard */; };
@@ -60,6 +62,8 @@
 		D287050C22F771C6008D13F3 /* DirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryManager.swift; sourceTree = "<group>"; };
 		D28C47872300FFA900C0ECCC /* ClassnotesGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassnotesGalleryViewController.swift; sourceTree = "<group>"; };
 		D28C4789230119D600C0ECCC /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		D28C478B23013A2800C0ECCC /* smartStudentLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smartStudentLogo.png; path = ../../../../../Desktop/smartStudentLogo.png; sourceTree = "<group>"; };
+		D28C478D23013B1B00C0ECCC /* smartStudentIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smartStudentIcon.png; path = ../../../../../Desktop/smartStudentIcon.png; sourceTree = "<group>"; };
 		D291FCE622E6546600E487EA /* SmartStudent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartStudent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D291FCE922E6546600E487EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D291FCEB22E6546600E487EA /* SemesterConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterConfigurationViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 				D291FCF022E6546700E487EA /* Assets.xcassets */,
 				D291FCF222E6546700E487EA /* LaunchScreen.storyboard */,
 				D291FCF522E6546700E487EA /* Info.plist */,
+				D28C478D23013B1B00C0ECCC /* smartStudentIcon.png */,
+				D28C478B23013A2800C0ECCC /* smartStudentLogo.png */,
 				D2F6AA58230093C2003CC2BA /* Date+isBetween.swift */,
 				D2F6AA5C23009FDF003CC2BA /* UIImage+base64.swift */,
 			);
@@ -259,6 +265,8 @@
 			files = (
 				D291FCF422E6546700E487EA /* LaunchScreen.storyboard in Resources */,
 				D291FCF122E6546700E487EA /* Assets.xcassets in Resources */,
+				D28C478E23013B1B00C0ECCC /* smartStudentIcon.png in Resources */,
+				D28C478C23013A2800C0ECCC /* smartStudentLogo.png in Resources */,
 				D291FCEF22E6546600E487EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

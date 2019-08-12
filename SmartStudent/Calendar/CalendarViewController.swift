@@ -98,11 +98,8 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
     }
     
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy MM dd"
-        let startDate = formatter.date(from: "2019 01 01")!
-        let endDate = Date()
-        return ConfigurationParameters(startDate: startDate, endDate: endDate)
+        let semester = realm.objects(Semester.self)[0]
+        return ConfigurationParameters(startDate: semester.beginDate, endDate: semester.endDate)
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
