@@ -11,6 +11,7 @@ import RealmSwift
 
 class ClassnotesViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var subjectsCollectionView: UICollectionView!
+    var selectedSubjectName = ""
     let realm = try! Realm()
     var subjectsNames = [String]()
     override func viewDidLoad() {
@@ -39,6 +40,8 @@ class ClassnotesViewController: UIViewController, UINavigationControllerDelegate
     }
     
     func getCurrentSubject(today: Date) -> Subject?{
+        var selected : Subject?
+        selected = nil
         let weekday = Calendar.current.component(.weekday, from: today)
         //Getting today's subjects
         var todaySubjects = [Subject]()
@@ -53,12 +56,18 @@ class ClassnotesViewController: UIViewController, UINavigationControllerDelegate
         //Compare each subject start and endTime
         for subject in todaySubjects{
             if today.isBetween(startTime: subject.startTime, endTime: subject.endTime){
-                return subject
+                selected = subject
             }
         }
-        return nil
+        return selected
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "gallerySegue"{
+            let galleryViewController = segue.destination as! ClassnotesGalleryViewController
+            galleryViewController.selectedSubjectName = selectedSubjectName
+        }
+    }
 }
 
 extension ClassnotesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -77,12 +86,19 @@ extension ClassnotesViewController: UICollectionViewDelegate, UICollectionViewDa
         let height = CGFloat(integerLiteral: 100)
         return CGSize(width: width, height: height)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedSubjectName = subjectsNames[indexPath.row]
+        print(selectedSubjectName)
+        performSegue(withIdentifier: "gallerySegue", sender: self)
+    }
 }
 
 extension ClassnotesViewController : UIImagePickerControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.editedImage] as? UIImage else {return}
         //Save classnote photo
+        var isSaved = false
         let today = Date()
         let currentSubject = getCurrentSubject(today: today)
         if currentSubject == nil{
@@ -90,8 +106,12 @@ extension ClassnotesViewController : UIImagePickerControllerDelegate{
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alertController, animated: true, completion: nil)
         }else{
+            isSaved = true
+            print("Foto guardada: \(isSaved)")
             let classnote = Classnote()
             classnote.subject = currentSubject!
+            classnote.subjectName = (currentSubject?.name)!
+            selectedSubjectName = classnote.subject.name
             classnote.time = today
             guard let imageData = image.encodedBase64() else {return}
             classnote.imageData = imageData
@@ -99,7 +119,17 @@ extension ClassnotesViewController : UIImagePickerControllerDelegate{
                 realm.add(classnote)
             }
         }
-        picker.dismiss(animated: true, completion: nil)
+        picker.dismiss(animated: true) {
+            if isSaved{
+                let alertController = UIAlertController(title: nil, message: "Foto guardada en \(self.selectedSubjectName)", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alertController, animated: true, completion: nil)
+            }else{
+                let alertController = UIAlertController(title: nil, message: "No tienes clases en este horario", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

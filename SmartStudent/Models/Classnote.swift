@@ -11,6 +11,7 @@ import RealmSwift
 
 class Classnote : Object{
     var subject : Subject = Subject()
+    @objc dynamic var subjectName : String = String()
     @objc dynamic var time : Date = Date()
     @objc dynamic var imageData : String = String()
 }

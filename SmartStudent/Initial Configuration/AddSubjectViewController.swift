@@ -16,7 +16,7 @@ class AddSubjectViewController: UIViewController {
     @IBOutlet weak var classroomTextField: UITextField!
     @IBOutlet weak var teacherNameTextField: UITextField!
     @IBOutlet weak var weekdaysCollectionView: UICollectionView!
-    let weekdays = ["L", "Ma", "Mi", "J", "V", "S"]
+    let weekdays = ["D","L", "Ma", "Mi", "J", "V", "S"]
     var selectedWeekdayIndex = [Int]()
     let realm = try! Realm()
     let directoryManager = DirectoryManager()
@@ -34,7 +34,7 @@ class AddSubjectViewController: UIViewController {
         var adjustIndex = [Weekday]()
         for element in array{
             let weekday = Weekday()
-            weekday.day = element + 2
+            weekday.day = element + 1
             adjustIndex.append(weekday)
         }
         return adjustIndex
