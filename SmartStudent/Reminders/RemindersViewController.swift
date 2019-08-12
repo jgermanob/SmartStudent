@@ -72,8 +72,8 @@ class RemindersViewController: UIViewController {
         case 0:
             if(subjectTextField.text != "" && descriptionTextField.text != ""){
                 let homework = Homework()
-                homework.subject = getReminderSubject(subjectName: subjectTextField.text!)
-                print(homework.subject.name)
+                let reminderSubject = getReminderSubject(subjectName: subjectTextField.text!)
+                homework.subjectName = reminderSubject.name
                 homework.activity = descriptionTextField.text!
                 homework.deadline = deadlineDatePicker.date
                 try! realm.write {
@@ -89,7 +89,8 @@ class RemindersViewController: UIViewController {
         case 1:
             if(subjectTextField.text != "" && descriptionTextField.text != ""){
                 let exam = Exam()
-                exam.subject = getReminderSubject(subjectName: subjectTextField.text!)
+                let reminderSubject = getReminderSubject(subjectName: subjectTextField.text!)
+                exam.subjectName = reminderSubject.name
                 exam.topics = descriptionTextField.text!
                 exam.date = deadlineDatePicker.date
                 try! realm.write {
@@ -105,7 +106,8 @@ class RemindersViewController: UIViewController {
         case 2:
             if(subjectTextField.text != "" && descriptionTextField.text != ""){
                 let project = Project()
-                project.subject = getReminderSubject(subjectName: subjectTextField.text!)
+                let reminderSubject = getReminderSubject(subjectName: subjectTextField.text!)
+                project.subjectName = reminderSubject.name
                 project.title = descriptionTextField.text!
                 project.deadline = deadlineDatePicker.date
                 try! realm.write {

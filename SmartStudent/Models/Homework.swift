@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 
 class Homework : Object{
-    var subject : Subject = Subject()
+    @objc dynamic var subjectName: String = String()
     @objc dynamic var activity : String = String()
     @objc dynamic var deadline : Date = Date()
     //@objc dynamic var score : Double = 0.0

@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 
 class Exam : Object{
-    var subject : Subject = Subject()
+    @objc dynamic var subjectName: String = String()
     @objc dynamic var topics : String = String()
     @objc dynamic var date : Date = Date()
     //@objc dynamic var score : Double = 0.0
