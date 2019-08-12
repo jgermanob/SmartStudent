@@ -31,6 +31,7 @@
 		D291FCEF22E6546600E487EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D291FCED22E6546600E487EA /* Main.storyboard */; };
 		D291FCF122E6546700E487EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D291FCF022E6546700E487EA /* Assets.xcassets */; };
 		D291FCF422E6546700E487EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D291FCF222E6546700E487EA /* LaunchScreen.storyboard */; };
+		D2C99ACC2301E0A300E758F4 /* SmartStudentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C99ACB2301E0A300E758F4 /* SmartStudentTests.swift */; };
 		D2F58C0E23019F9200FD3AB8 /* HomeworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F58C0D23019F9200FD3AB8 /* HomeworkTableViewCell.swift */; };
 		D2F58C1023019FA000FD3AB8 /* ExamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F58C0F23019FA000FD3AB8 /* ExamTableViewCell.swift */; };
 		D2F58C1223019FAE00FD3AB8 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F58C1123019FAE00FD3AB8 /* ProjectTableViewCell.swift */; };
@@ -43,6 +44,16 @@
 		D2FB170922F27BFC00EC1713 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FB170822F27BFC00EC1713 /* ScheduleTableViewCell.swift */; };
 		EB40C70E6BAC4EAE0647D66D /* Pods_SmartStudent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FACB0BFBAA4A24DE723F1A /* Pods_SmartStudent.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2C99ACE2301E0A300E758F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D291FCDE22E6546600E487EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D291FCE522E6546600E487EA;
+			remoteInfo = SmartStudent;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		34FACB0BFBAA4A24DE723F1A /* Pods_SmartStudent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartStudent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +85,9 @@
 		D291FCF022E6546700E487EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D291FCF322E6546700E487EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D291FCF522E6546700E487EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2C99AC92301E0A300E758F4 /* SmartStudentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartStudentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C99ACB2301E0A300E758F4 /* SmartStudentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartStudentTests.swift; sourceTree = "<group>"; };
+		D2C99ACD2301E0A300E758F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F58C0D23019F9200FD3AB8 /* HomeworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkTableViewCell.swift; sourceTree = "<group>"; };
 		D2F58C0F23019FA000FD3AB8 /* ExamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamTableViewCell.swift; sourceTree = "<group>"; };
 		D2F58C1123019FAE00FD3AB8 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
@@ -92,6 +106,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB40C70E6BAC4EAE0647D66D /* Pods_SmartStudent.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C99AC62301E0A300E758F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				D291FCE822E6546600E487EA /* SmartStudent */,
+				D2C99ACA2301E0A300E758F4 /* SmartStudentTests */,
 				D291FCE722E6546600E487EA /* Products */,
 				5A9013A24DEFAC05CD6A01DD /* Pods */,
 				426E4A50E6CD17D890615D73 /* Frameworks */,
@@ -190,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				D291FCE622E6546600E487EA /* SmartStudent.app */,
+				D2C99AC92301E0A300E758F4 /* SmartStudentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,6 +238,15 @@
 			path = SmartStudent;
 			sourceTree = "<group>";
 		};
+		D2C99ACA2301E0A300E758F4 /* SmartStudentTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2C99ACB2301E0A300E758F4 /* SmartStudentTests.swift */,
+				D2C99ACD2301E0A300E758F4 /* Info.plist */,
+			);
+			path = SmartStudentTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +269,24 @@
 			productReference = D291FCE622E6546600E487EA /* SmartStudent.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D2C99AC82301E0A300E758F4 /* SmartStudentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2C99AD22301E0A300E758F4 /* Build configuration list for PBXNativeTarget "SmartStudentTests" */;
+			buildPhases = (
+				D2C99AC52301E0A300E758F4 /* Sources */,
+				D2C99AC62301E0A300E758F4 /* Frameworks */,
+				D2C99AC72301E0A300E758F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2C99ACF2301E0A300E758F4 /* PBXTargetDependency */,
+			);
+			name = SmartStudentTests;
+			productName = SmartStudentTests;
+			productReference = D2C99AC92301E0A300E758F4 /* SmartStudentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -249,6 +299,10 @@
 				TargetAttributes = {
 					D291FCE522E6546600E487EA = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					D2C99AC82301E0A300E758F4 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D291FCE522E6546600E487EA;
 					};
 				};
 			};
@@ -266,6 +320,7 @@
 			projectRoot = "";
 			targets = (
 				D291FCE522E6546600E487EA /* SmartStudent */,
+				D2C99AC82301E0A300E758F4 /* SmartStudentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,6 +335,13 @@
 				D28C478E23013B1B00C0ECCC /* smartStudentIcon.png in Resources */,
 				D28C478C23013A2800C0ECCC /* smartStudentLogo.png in Resources */,
 				D291FCEF22E6546600E487EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C99AC72301E0A300E758F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +426,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2C99AC52301E0A300E758F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C99ACC2301E0A300E758F4 /* SmartStudentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2C99ACF2301E0A300E758F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D291FCE522E6546600E487EA /* SmartStudent */;
+			targetProxy = D2C99ACE2301E0A300E758F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D291FCED22E6546600E487EA /* Main.storyboard */ = {
@@ -538,6 +616,46 @@
 			};
 			name = Release;
 		};
+		D2C99AD02301E0A300E758F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3SB6LLUJP;
+				INFOPLIST_FILE = SmartStudentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.germanco.SmartStudentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartStudent.app/SmartStudent";
+			};
+			name = Debug;
+		};
+		D2C99AD12301E0A300E758F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3SB6LLUJP;
+				INFOPLIST_FILE = SmartStudentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.germanco.SmartStudentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartStudent.app/SmartStudent";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -555,6 +673,15 @@
 			buildConfigurations = (
 				D291FCF922E6546700E487EA /* Debug */,
 				D291FCFA22E6546700E487EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C99AD22301E0A300E758F4 /* Build configuration list for PBXNativeTarget "SmartStudentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C99AD02301E0A300E758F4 /* Debug */,
+				D2C99AD12301E0A300E758F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
