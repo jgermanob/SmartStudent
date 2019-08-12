@@ -23,6 +23,8 @@ class SemesterConfigurationViewController: UIViewController {
         super.viewDidLoad()
         beginDatePicker.datePickerMode = .date
         endDatePicker.datePickerMode = .date
+        beginDatePicker.setValue(UIColor.white, forKey: "textColor")
+        endDatePicker.setValue(UIColor.white, forKey: "textColor")
     }
 
     @IBAction func nextButton(_ sender: Any) {

@@ -34,6 +34,11 @@ class ReminderDetailViewController: UIViewController {
         examTableView.dataSource = self
         projectTableView.delegate = self
         projectTableView.dataSource = self
+        
+        homeworkTableView.backgroundColor = .clear
+        examTableView.backgroundColor = .clear
+        projectTableView.backgroundColor = .clear
+        
         formatter.dateFormat = "MM-dd-yyyy"
         subjectLabel.text = selectedSubject
     }
@@ -88,6 +93,8 @@ extension ReminderDetailViewController : UITableViewDelegate, UITableViewDataSou
             homeworkCell.activityTextView.text = selectedHomeworks[indexPath.row].activity
             let date = formatter.string(from: selectedHomeworks[indexPath.row].deadline)
             homeworkCell.deadlineLabel.text = date
+            homeworkCell.activityTextView.textColor = .white
+            homeworkCell.deadlineLabel.textColor = .white
             return homeworkCell
             
         }
@@ -96,6 +103,8 @@ extension ReminderDetailViewController : UITableViewDelegate, UITableViewDataSou
             examCell.topicsTextView.text = selectedExam[indexPath.row].topics
             let date = formatter.string(from: selectedExam[indexPath.row].date)
             examCell.dateLabel.text = date
+            examCell.topicsTextView.textColor = .white
+            examCell.dateLabel.textColor = .white
             return examCell
         }
         if tableView == projectTableView{
@@ -103,6 +112,8 @@ extension ReminderDetailViewController : UITableViewDelegate, UITableViewDataSou
             projectCell.titleTextView.text = selectedProject[indexPath.row].title
             let date = formatter.string(from: selectedProject[indexPath.row].deadline)
             projectCell.deadlineLabel.text = date
+            projectCell.titleTextView.textColor = .white
+            projectCell.deadlineLabel.textColor = .white
             return projectCell
         }
         return cell!

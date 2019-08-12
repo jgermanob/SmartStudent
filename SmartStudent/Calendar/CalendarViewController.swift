@@ -26,6 +26,7 @@ class CalendarViewController: UIViewController {
         // Do any additional setup after loading the view.
         configureCalendarView()
         configureScheduleTableView()
+        scheduleTableView.backgroundColor = .clear
     }
     
     func configureCalendarView(){
@@ -66,7 +67,7 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
     
     func handleCellTextColor(cell : DateCell, cellState: CellState){
         if cellState.dateBelongsTo == .thisMonth{
-            cell.dayLabel.textColor = UIColor.black
+            cell.dayLabel.textColor = UIColor.white
         }else{
             cell.dayLabel.textColor = UIColor.lightGray
         }
@@ -85,7 +86,7 @@ extension CalendarViewController: JTAppleCalendarViewDataSource, JTAppleCalendar
         guard let cell = view as? DateCell else {return}
         cell.dayLabel.text = cellState.text
         cell.layer.borderWidth = 0.5
-        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderColor = UIColor.white.cgColor
         handleCellTextColor(cell: cell, cellState: cellState)
         handleCellSelected(cell: cell, cellState: cellState)
         

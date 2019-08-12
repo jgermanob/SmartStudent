@@ -20,6 +20,7 @@ class ClassnotesViewController: UIViewController, UINavigationControllerDelegate
         setupNavigationBar()
         subjectsCollectionView.delegate = self
         subjectsCollectionView.dataSource = self
+        subjectsCollectionView.backgroundColor = .clear
         let results = realm.objects(Subject.self)
         for subject in results{
             subjectsNames.append(subject.name)
@@ -78,6 +79,7 @@ extension ClassnotesViewController: UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "classnotesCell", for: indexPath) as! ClassnotesCollectionViewCell
         cell.subjectName.text = subjectsNames[indexPath.row]
+        cell.subjectName.textColor = .white
         return cell
     }
     

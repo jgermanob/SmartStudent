@@ -26,6 +26,9 @@ class AddSubjectViewController: UIViewController {
         subjectEndTimePicker.datePickerMode = .time
         weekdaysCollectionView.delegate = self
         weekdaysCollectionView.dataSource = self
+        subjectStartTimePicker.setValue(UIColor.white, forKey: "textColor")
+        subjectEndTimePicker.setValue(UIColor.white, forKey: "textColor")
+        weekdaysCollectionView.backgroundColor = UIColor.clear
     }
     
     //Adjust weekdays' index to get te correct day on the Calendar and correct data type to store using Realm
@@ -70,8 +73,8 @@ extension AddSubjectViewController : UICollectionViewDelegate, UICollectionViewD
             cell.weekdayLabel.backgroundColor = UIColor.red
             cell.weekdayLabel.textColor = UIColor.white
         }else{
-            cell.weekdayLabel.backgroundColor = UIColor.white
-            cell.weekdayLabel.textColor = UIColor.black
+            cell.weekdayLabel.backgroundColor = UIColor.clear
+            cell.weekdayLabel.textColor = UIColor.white
         }
         cell.layoutSubviews()
         cell.weekdayLabel.text = weekdays[indexPath.row]

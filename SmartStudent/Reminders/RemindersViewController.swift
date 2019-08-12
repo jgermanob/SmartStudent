@@ -23,6 +23,7 @@ class RemindersViewController: UIViewController {
         super.viewDidLoad()
         setupSubjectDropDownTextField()
         deadlineDatePicker.datePickerMode = .date
+        deadlineDatePicker.setValue(UIColor.white, forKey: "textColor")
     }
     
     func setupSubjectDropDownTextField(){

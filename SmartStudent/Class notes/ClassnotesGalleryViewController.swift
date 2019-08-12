@@ -21,6 +21,7 @@ class ClassnotesGalleryViewController: UIViewController {
         super.viewDidLoad()
         subjectNamesLabel.text = selectedSubjectName
         classNotes = getClassnotes(subjectName: selectedSubjectName)
+        galleryCollectionView.backgroundColor = .clear
         galleryCollectionView.delegate = self
         galleryCollectionView.dataSource = self
         // Do any additional setup after loading the view.
