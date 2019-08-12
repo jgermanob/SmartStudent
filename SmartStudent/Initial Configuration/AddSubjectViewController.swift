@@ -19,7 +19,6 @@ class AddSubjectViewController: UIViewController {
     let weekdays = ["D","L", "Ma", "Mi", "J", "V", "S"]
     var selectedWeekdayIndex = [Int]()
     let realm = try! Realm()
-    let directoryManager = DirectoryManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +50,6 @@ class AddSubjectViewController: UIViewController {
             subject.endTime = subjectEndTimePicker.date
             subject.weekdays.removeAll()
             subject.weekdays.append(objectsIn: selectedWeekdays)
-            directoryManager.createDirectory(directoryName: subject.name)
             try! realm.write {
                 realm.add(subject)
             }

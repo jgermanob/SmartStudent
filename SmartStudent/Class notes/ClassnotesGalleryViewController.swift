@@ -14,6 +14,7 @@ class ClassnotesGalleryViewController: UIViewController {
     @IBOutlet weak var subjectNamesLabel: UILabel!
     @IBOutlet weak var galleryCollectionView: UICollectionView!
     
+    var selectedImageData = String()
     let realm = try! Realm()
     var classNotes = [Classnote]()
     override func viewDidLoad() {
@@ -36,6 +37,13 @@ class ClassnotesGalleryViewController: UIViewController {
         return classNotes
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "imageSegue"{
+            let classnoteImageViewController = segue.destination as! ClassnoteImageViewController
+            classnoteImageViewController.imageData = self.selectedImageData
+        }
+    }
+    
 }
 
 extension ClassnotesGalleryViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -48,5 +56,8 @@ extension ClassnotesGalleryViewController : UICollectionViewDelegate, UICollecti
         cell.classnoteImageView.image = UIImage(data: Data(base64Encoded: classNotes[indexPath.row].imageData)!)
         return cell
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.selectedImageData = classNotes[indexPath.row].imageData
+        performSegue(withIdentifier: "imageSegue", sender: self)
+    }
 }

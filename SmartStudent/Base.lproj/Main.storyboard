@@ -943,17 +943,17 @@
                     <connections>
                         <outlet property="galleryCollectionView" destination="9Ub-Ii-RhX" id="eGy-CJ-S35"/>
                         <outlet property="subjectNamesLabel" destination="nbU-rV-M7L" id="Nb9-5Z-FzW"/>
-                        <segue destination="TYH-yi-dnd" kind="show" id="ahQ-L1-ciL"/>
+                        <segue destination="TYH-yi-dnd" kind="show" identifier="imageSegue" id="ahQ-L1-ciL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RO2-2c-x7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4557.971014492754" y="2268.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Classnote Image View Controller-->
         <scene sceneID="bJb-UX-bDv">
             <objects>
-                <viewController id="TYH-yi-dnd" sceneMemberID="viewController">
+                <viewController id="TYH-yi-dnd" customClass="ClassnoteImageViewController" customModule="SmartStudent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CiQ-Ag-8r8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -966,6 +966,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="TVT-a9-4VB"/>
                     </view>
+                    <connections>
+                        <outlet property="classnoteImageView" destination="rc1-5k-tdK" id="09Q-Co-CHA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JDW-1C-Ayf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -22,7 +22,6 @@
 		D2816B8322FF636000AB2C80 /* Homework.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2816B8222FF636000AB2C80 /* Homework.swift */; };
 		D2816B8522FF647100AB2C80 /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2816B8422FF647100AB2C80 /* Exam.swift */; };
 		D2816B8722FF664D00AB2C80 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2816B8622FF664D00AB2C80 /* Project.swift */; };
-		D287050D22F771C6008D13F3 /* DirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D287050C22F771C6008D13F3 /* DirectoryManager.swift */; };
 		D28C47882300FFA900C0ECCC /* ClassnotesGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28C47872300FFA900C0ECCC /* ClassnotesGalleryViewController.swift */; };
 		D28C478A230119D600C0ECCC /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28C4789230119D600C0ECCC /* GalleryCollectionViewCell.swift */; };
 		D28C478C23013A2800C0ECCC /* smartStudentLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D28C478B23013A2800C0ECCC /* smartStudentLogo.png */; };
@@ -36,6 +35,7 @@
 		D2F58C1023019FA000FD3AB8 /* ExamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F58C0F23019FA000FD3AB8 /* ExamTableViewCell.swift */; };
 		D2F58C1223019FAE00FD3AB8 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F58C1123019FAE00FD3AB8 /* ProjectTableViewCell.swift */; };
 		D2F58C142301A01200FD3AB8 /* ReminderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F58C132301A01200FD3AB8 /* ReminderDetailViewController.swift */; };
+		D2F58C162301AE9100FD3AB8 /* ClassnoteImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F58C152301AE9100FD3AB8 /* ClassnoteImageViewController.swift */; };
 		D2F6AA59230093C2003CC2BA /* Date+isBetween.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F6AA58230093C2003CC2BA /* Date+isBetween.swift */; };
 		D2F6AA5B23009D19003CC2BA /* Classnote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F6AA5A23009D19003CC2BA /* Classnote.swift */; };
 		D2F6AA5D23009FDF003CC2BA /* UIImage+base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F6AA5C23009FDF003CC2BA /* UIImage+base64.swift */; };
@@ -63,7 +63,6 @@
 		D2816B8222FF636000AB2C80 /* Homework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework.swift; sourceTree = "<group>"; };
 		D2816B8422FF647100AB2C80 /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
 		D2816B8622FF664D00AB2C80 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
-		D287050C22F771C6008D13F3 /* DirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryManager.swift; sourceTree = "<group>"; };
 		D28C47872300FFA900C0ECCC /* ClassnotesGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassnotesGalleryViewController.swift; sourceTree = "<group>"; };
 		D28C4789230119D600C0ECCC /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		D28C478B23013A2800C0ECCC /* smartStudentLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smartStudentLogo.png; path = ../../../../../Desktop/smartStudentLogo.png; sourceTree = "<group>"; };
@@ -79,6 +78,7 @@
 		D2F58C0F23019FA000FD3AB8 /* ExamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamTableViewCell.swift; sourceTree = "<group>"; };
 		D2F58C1123019FAE00FD3AB8 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
 		D2F58C132301A01200FD3AB8 /* ReminderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailViewController.swift; sourceTree = "<group>"; };
+		D2F58C152301AE9100FD3AB8 /* ClassnoteImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassnoteImageViewController.swift; sourceTree = "<group>"; };
 		D2F6AA58230093C2003CC2BA /* Date+isBetween.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+isBetween.swift"; sourceTree = "<group>"; };
 		D2F6AA5A23009D19003CC2BA /* Classnote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classnote.swift; sourceTree = "<group>"; };
 		D2F6AA5C23009FDF003CC2BA /* UIImage+base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+base64.swift"; sourceTree = "<group>"; };
@@ -167,11 +167,11 @@
 		D287050B22F7718F008D13F3 /* Class notes */ = {
 			isa = PBXGroup;
 			children = (
-				D287050C22F771C6008D13F3 /* DirectoryManager.swift */,
 				D20DDB3122F7ACB0004659E0 /* ClassnotesViewController.swift */,
 				D20DDB3322F7B3C2004659E0 /* ClassnotesCollectionViewCell.swift */,
 				D28C47872300FFA900C0ECCC /* ClassnotesGalleryViewController.swift */,
 				D28C4789230119D600C0ECCC /* GalleryCollectionViewCell.swift */,
+				D2F58C152301AE9100FD3AB8 /* ClassnoteImageViewController.swift */,
 			);
 			path = "Class notes";
 			sourceTree = "<group>";
@@ -346,13 +346,13 @@
 				D2F6AA5B23009D19003CC2BA /* Classnote.swift in Sources */,
 				D28C478A230119D600C0ECCC /* GalleryCollectionViewCell.swift in Sources */,
 				D2816B7F22FF5BA200AB2C80 /* RemindersViewController.swift in Sources */,
-				D287050D22F771C6008D13F3 /* DirectoryManager.swift in Sources */,
 				D2F6AA5D23009FDF003CC2BA /* UIImage+base64.swift in Sources */,
 				D2F58C1223019FAE00FD3AB8 /* ProjectTableViewCell.swift in Sources */,
 				D2F58C1023019FA000FD3AB8 /* ExamTableViewCell.swift in Sources */,
 				D2816B8122FF5E7C00AB2C80 /* DropDown.swift in Sources */,
 				D20A028322E7B8EE002CD010 /* DateCell.swift in Sources */,
 				D291FCEC22E6546600E487EA /* SemesterConfigurationViewController.swift in Sources */,
+				D2F58C162301AE9100FD3AB8 /* ClassnoteImageViewController.swift in Sources */,
 				D2F9914A22EA436000A996A8 /* SubjectTableViewCell.swift in Sources */,
 				D220C9D622E68FCB0001A7D8 /* Semester.swift in Sources */,
 				D27E2F3E22E9396C0099C114 /* WeekdayCollectionViewCell.swift in Sources */,
