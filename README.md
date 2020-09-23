@@ -1,5 +1,5 @@
 # SmartStudent
-Final project from iOS app development diploma at iOS development lab UNAM. This app wants to help students to organize their time and improve their performance with te next features:
+Final project from iOS app development diploma at iOS development lab UNAM. This app wants to help students to organize their time and improve their performance with the next features:
 
 - Calendar to schedule their current semester.
 - Add classes and its info.
